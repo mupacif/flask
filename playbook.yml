@@ -1,0 +1,8 @@
+---
+- name: tutoansible
+  hosts: web
+  remote_user: root
+  tasks:
+  - name: creation de l'uilisaeur toto
+    user: name=toto createhome=yes shell=/bin/bash password=toto
+...
